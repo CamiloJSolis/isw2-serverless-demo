@@ -1,7 +1,9 @@
 export default function handler(req,res) {
+  const nombre = req.query.nombre || "anónimo";
+  
   res.status(200).json({
-    mensaje:"こんにちはISW2！",
+    mensaje:"こんにちは${nombre}!",
     curso:"ソフトウェアエンジニアリング二",
-    timestamp:"..."
+    timestamp:new Date().toISOString()
   });
 }
