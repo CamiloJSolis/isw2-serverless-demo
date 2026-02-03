@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    cosnt nombre = req.query.nombre || "anónimo";
+    const nombre = req.query.nombre || "anónimo";
 
     const proto = req.headers["x-forwarded-proto"] || "https";
     const host = req.headers.host;
