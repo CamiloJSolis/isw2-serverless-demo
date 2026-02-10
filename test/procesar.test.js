@@ -21,7 +21,10 @@ test("procesar convierte el nombre a mayúsculas", () => {
   handler(req, res);
 
   assert.equal(res.statusCode, 200);
-  assert.deepEqual(res.body, { resultado: "Nombre procesado: CAMILO" });
+  assert.deepEqual(res.body, { 
+    resultado: "Nombre procesado: CAMILO",
+    longitud: 6
+  });
 });
 
 test("procesar maneja nombre ausente", () => {
