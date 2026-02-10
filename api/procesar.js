@@ -10,6 +10,5 @@
    
   res.status(200).json({
     resultado:`Nombre procesado: ${nombre.toUpperCase()}`,
-    timestamp: new Date().toISOString()
   });
 }
