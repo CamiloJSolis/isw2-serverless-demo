@@ -26,7 +26,7 @@ test("procesar convierte el nombre a mayúsculas", () => {
     longitud: 6
   });
 });
-test
+
 test("procesar maneja nombre ausente", () => {
   const req = { query: {} };
 
